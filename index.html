@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Guilherme Nogueira</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E3CDB6;
+        }
+        header {
+            background-color: #72675C;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .line {
+            background-color: #635A50;
+            width: 100%;
+            height: 8px; /* Altura da linha */
+        }
+        header nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        #home {
+        margin-bottom: 40px;
+        }
+
+        .home-content {
+            display: flex; /* Alinhando conteúdo lado a lado */
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px; /* Espaçamento entre texto e foto */
+        }
+        .home-text {
+        flex: 2; /* Texto ocupa mais espaço */
+        }
+
+        .home-photo {
+            flex: 1; /* Foto ocupa menos espaço */
+        }
+
+        /* Espaço para foto - quadrado */
+        .home-photo img {
+            width: 100%; /* Largura total do contêiner */
+            max-width: 300px; /* Tamanho máximo do quadrado */
+            aspect-ratio: 1 / 1; /* Mantém a proporção quadrada */
+            object-fit: cover; /* A imagem se ajusta sem distorcer */
+            border-radius: 8px; /* Borda arredondada opcional */
+        }
+        footer {
+            background-color: #635A50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+        h1, h2, h3 {
+            color: #000;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .job, .project {
+            margin-bottom: 20px;
+        }
+        .job h3, .project h3 {
+            margin: 0;
+            color: #f0f0f0;
+        }
+        .job p, .project p {
+            margin: 5px 0;
+        }
+        .company, .dates {
+            font-weight: bold;
+        }
+        .dates {
+            font-style: italic;
+            color: #555;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #635A50;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #635A50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+        .projects-container {
+        display: flex;
+        justify-content: space-between; /* Para espaçamento entre os retângulos */
+        gap: 20px; /* Espaçamento entre os retângulos */
+        flex-wrap: wrap; /* Permite que os projetos se reorganizem em telas menores */
+        }
+
+        .project {
+            flex: 1;
+            background-color: #72675C;
+            border: 1px solid #635A50;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 30%; /* Limita a largura dos retângulos */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            aspect-ratio: 3 / 4; /* Mantém a proporção 3x4 */
+        }
+
+        .project img {
+            width: 100%;
+            height: 50%; /* Metade superior será imagem */
+            object-fit: cover;
+        }
+
+        .project-description {
+            padding: 10px;
+            flex: 1;
+        }
+
+        .project a {
+            text-align: center;
+            display: block;
+            padding: 10px;
+            background-color: #635A50;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .project a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>- Portfólio de Guilherme Nogueira -</h1>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        
+    </header>
+    <div class="line"></div>
+    <main>
+<!-- Início -->
+<section id="home">
+    <div class="home-content">
+        <!-- Texto de introdução -->
+        <div class="home-text">
+            <h2>Bem-vindo ao Meu Portfólio</h2>
+            <p>Olá! Eu sou o Guilherme Nogueira Dessaune de Oliveira, possuo experiencia em automação de processos digitais e infraestrutura. Confira minha tragetéria e entre em contato!</p>
+        </div>
+        
+        <!-- Espaço para a foto -->
+        <div class="home-photo">
+            <!-- Espaço reservado para a foto -->
+            <img src="images/ToBeAdded.jpg" alt="Minha Foto">
+        </div>
+    </div>
+</section>
+
+        <!-- Sobre Mim -->
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Nome completo: Guilherme Nogueira Dessaune de Oliveira</p>
+            <p class="dates">Data de nascimento: 27/06/03 | Idade: 21</p>
+            <p>Email: guilhermedessaune@hotmail.com</p>
+            <h3>Experiência Profissional</h3>
+            <div class="job">
+                <h3>Digital Process Automation Professional</h3>
+                <p class="company">Empresa Pentago Serviços LTDA</p>
+                <p class="dates">Out 2022 - Set 2023</p>
+                <p>Estagiário</p>
+                <ul>
+                    <li>Auxiliar a transformar processos de trabalho e requisitos de negócio em soluções automatizadas;</li>
+                    <li>Desenvolvimento de requisitos funcionais e não funcionais;</li>
+                    <li>Garantir qualidade da entrega e executar testes conforme planejamento;</li>
+                    <li>Registrar erros encontrados no sistema de gerenciamento.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>NTI - Faesa</h3>
+                <p class="company">Faesa</p>
+                <p class="dates">Fev 2024 - Jun 2024</p>
+                <p>Estagiário</p>
+                <ul>
+                    <li>Auxílio no atendimento inicial aos usuários na parte de infraestrutura;</li>
+                    <li>Manutenção de computadores e rede;</li>
+                    <li>Criação de relatórios gerenciais.</li>
+                </ul>
+            </div>
+        </section>
+
+<!-- Projetos -->
+<section id="projects">
+    <h2>Projetos</h2>
+    <div class="projects-container">
+        <div class="project">
+            <img src="images/TCC.png" alt="Projeto 1">
+            <div class="project-description">
+                <h3>TCC</h3>
+                <p>Uma demo de um exemplo de jogo educativo que seja divertido e incentive rejogabilidade.</p>
+            </div>
+            <a href="https://exemplo.com" target="_blank">Veja o projeto</a>
+        </div>
+        <div class="project">
+            <img src="images/ToBeAdded.jpg" alt="Projeto 2">
+            <div class="project-description">
+                <h3>To be added</h3>
+                <p>To be added.</p>
+            </div>
+            <a href="https://exemplo.com" target="_blank">Veja o projeto</a>
+        </div>
+        <div class="project">
+            <img src="images/ToBeAdded.jpg" alt="Projeto 3">
+            <div class="project-description">
+                <h3>To be added</h3>
+                <p>To be added.</p>
+            </div>
+            <a href="https://exemplo.com" target="_blank">Veja o projeto</a>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Contato -->
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
+            <form class="contact-form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu email">
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" placeholder="Sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 09/2024 Portfólio de Guilherme Nogueira. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
