@@ -50,6 +50,14 @@
         .home-photo {
             flex: 1; /* Foto ocupa menos espaço */
         }
+
+        /* Espaço para foto - quadrado */
+        .home-photo img {
+            width: 100%; /* Largura total do contêiner */
+            max-width: 300px; /*Tamanho máximo do quadrado */
+            object-fit: cover; /* A imagem se ajusta sem distorcer */
+            border-radius: 8px; /* Borda arredondada opcional */
+        }
         
         footer {
             background-color: #457b9d;
